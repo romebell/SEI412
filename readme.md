@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to SEI 412! You are officially a `Software Engineer`. 
+Welcome to SEI 412! You are officially a `Software Engineer`.
 
 Please `download` the following content to your brain 🧠
 
