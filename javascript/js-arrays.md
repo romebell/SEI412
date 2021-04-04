@@ -85,7 +85,7 @@ Arrays come with special methods attached to themselves that allow you to perfor
 * `.shift()` - remove an element off the front of the array
 * `.unshift(3)` - add an element to the beginning of an array
 
- \#\#\# Reorder an array: \* \`.sort\(\)\` - sort the elements in an array \* \`.reverse\(\)\` - reverse the array
+  \#\#\# Reorder an array: \* \`.sort\(\)\` - sort the elements in an array \* \`.reverse\(\)\` - reverse the array
 
 * `.concat([1, 2])` - concatenate two arrays together
 * `.slice(1, 3)` - return a copy of a portion of an array

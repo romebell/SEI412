@@ -28,7 +28,7 @@ Just like in Express, and other web server frameworks, Django gives us the abili
 
    This will create a folder named `catcollector` as well as a few support files and a folder within with the same name. Let's look at some of the key files:
 
-   * `settings.py` will hold the settings for our project. Things like our database connection info and other Python modules that we want to use go in here. (Similar to our `package.json` in node.)
+   * `settings.py` will hold the settings for our project. Things like our database connection info and other Python modules that we want to use go in here. \(Similar to our `package.json` in node.\)
    * `urls.py` is the main routing file for our project.
    * `manage.py` gives us access to common functions we'll perform on our app \(running the server, applying migrations, etc.\) It's like a module with lots of helpful functionality stored in it that we'll call on in our command line.
 
@@ -49,7 +49,7 @@ Just like in Express, and other web server frameworks, Django gives us the abili
    This will create a folder for `main_app` with many support files inside. Let's review some of the main ones:
 
    * `models.py` is where we define all of our data models. We will see that this afternoon.
-   * `views.py` is where we write the logic that happens when someone requests one of our URLs. This can be a bit confusing because in Unit 2, *views* referred to the template files themselves. In this case, *views* is actually the equivalent of the *actions* from controllers in Unit 2.
+   * `views.py` is where we write the logic that happens when someone requests one of our URLs. This can be a bit confusing because in Unit 2, _views_ referred to the template files themselves. In this case, _views_ is actually the equivalent of the _actions_ from controllers in Unit 2.
 
    We need to make sure we add this new app to our Django project. It doesn't happen automatically. In `catcollector/catcollector/settings.py` include our 'main\_app':
 

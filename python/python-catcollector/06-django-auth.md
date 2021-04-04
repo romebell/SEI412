@@ -141,7 +141,7 @@ def login_view(request):
         return render(request, 'login.html', {'form': form})
 ```
 
-Read more about the [cleaned_data](https://docs.djangoproject.com/en/3.1/ref/forms/api/#accessing-clean-data)
+Read more about the [cleaned\_data](https://docs.djangoproject.com/en/3.1/ref/forms/api/#accessing-clean-data)
 
 Finally, we'll add a new file for the `login.html` template:
 

@@ -45,7 +45,7 @@ Django has a built in auth module that builds off the User model, and uses sessi
 
   from the `auth.authenticate()` function and attaches user information to
 
-  the servers session and middleware.  This is what keeps users logged in.
+  the servers session and middleware. This is what keeps users logged in.
 
   You can reference user information all over the place off `request.user`
 

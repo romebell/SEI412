@@ -144,7 +144,7 @@ print("The lowest batting average is", min(batting_avgs))
 
 Answers
 
- \`\`\`python \# Declare a list of numbers numberz = \[4, 10, 8, 9, 77, 21, 3, 4\] \# Print out the largest difference between numbers big\_diff = max\(numberz\) - min\(numberz\) print\(big\_diff\) \# Print the mean of all the numbers avg = sum\(numberz\)/len\(numberz\) print\(avg\) \`\`\`
+\`\`\`python \# Declare a list of numbers numberz = \[4, 10, 8, 9, 77, 21, 3, 4\] \# Print out the largest difference between numbers big\_diff = max\(numberz\) - min\(numberz\) print\(big\_diff\) \# Print the mean of all the numbers avg = sum\(numberz\)/len\(numberz\) print\(avg\) \`\`\`
 
 ## Additional Resources
 

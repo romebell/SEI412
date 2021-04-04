@@ -152,7 +152,7 @@ Using the `debugger` keyword will stop our program every time. It won't output a
 
 Use your debugging tools to investigate the response object and find out how to access the title and the url of the first result. Copy and paste parts of this line of code into your program so you have easy access to the important parts of your search results.
 
-![debugging view](../.gitbook/assets/debugging_view.png)
+![debugging view](../.gitbook/assets/debugging_view%20%281%29.png)
 
 Consider how the `forEach` and `map` functions may be useful tools to process these complicated objects.
 

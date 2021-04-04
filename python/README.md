@@ -1,6 +1,5 @@
 # Python
 
-
 ## Python
 
 Python is a widely used high-level programming language used for general-purpose programming, created by Guido van Rossum and first released in 1991. Python has a design philosophy which emphasizes code readability. You'll often find that your first guess at what a function is called is surprisingly correct.

@@ -113,7 +113,7 @@ class BankAccount():
 
 Python allows us to provide default values for parameters in any function we provide. Let's write a `Point` class that has `x` and `y` variables. If no `x` and `y` values are provided when a `Point` is initialized `x` and `y` should both default to zero.
 
-Add a method called `distance` that calculates and returns the distance between the current point and the origin. Use the mathematical distance formula where the distance between a point and the origin is defined as the square root of \(x_x + y_y\).
+Add a method called `distance` that calculates and returns the distance between the current point and the origin. Use the mathematical distance formula where the distance between a point and the origin is defined as the square root of \(x\_x + y\_y\).
 
 Use Python's exponent `**` operator to calculate square root. `9 ** .5 == 3.0`
 

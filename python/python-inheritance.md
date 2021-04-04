@@ -137,7 +137,7 @@ Let's practice writing classes and using inheritance by modelling different type
   * Children's bank accounts have an interest rate of Zero.
   * Every time `accumulate_interest` is executed on a Child's account the
 
-    account  always gets $10 added to the balance.
+    account always gets $10 added to the balance.
 * Create an **OverdraftAccount** class
   * An overdraft account penalizes customers for trying to draw too much
 

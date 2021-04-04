@@ -173,7 +173,7 @@ p.highlight {
 
 A great feature of SASS is the ability to import other stylesheets. This aspect allows us to utilize DRY principles even in our stylesheets!
 
- ****Note! **When you're creating `.scss` files that you know you'll be importing into a main stylesheet be sure to name them starting with and** underscore\*\*
+**\*\*Note!** When you're creating `.scss` files that you know you'll be importing into a main stylesheet be sure to name them starting with and_\* underscore\_\*
 
 e.g: `_navbar.scss`
 

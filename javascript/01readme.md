@@ -163,7 +163,7 @@ for(let i = 0; i<theSquares.length; i++) {
 }
 ```
 
- **Be Careful!**  Multi-element selectors like `querySelectorAll`, `getElementsByTagName`, and `getElementsByClassName` don't actually return an array; they return something called an _HTML collection_. This means that many array methods \(iterators, in particular, which we'll learn about later\) wont work. If you run into this problem, you can use the [`Array.from`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) method to convert it to an array.
+**Be Careful!** Multi-element selectors like `querySelectorAll`, `getElementsByTagName`, and `getElementsByClassName` don't actually return an array; they return something called an _HTML collection_. This means that many array methods \(iterators, in particular, which we'll learn about later\) wont work. If you run into this problem, you can use the [`Array.from`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) method to convert it to an array.
 
 **Accessing and changing element attributes**
 
@@ -250,7 +250,6 @@ Lots of events are generated within the browser, for example, when:
 
 Take a gander [here](https://developer.mozilla.org/en-US/docs/Web/Events) at the type and sheer number of events.
 
-
 #### DOMContentLoaded Event
 
 All of the selectors we've been using rely on the use of DOM elements. However, if the JavaScript loads before all the DOM elements load, the selectors won't recognize that some of them exist! To avoid this problem, there's an event called `DOMContentLoaded` that we can encapsulate our code inside. Then, we can guarantee that the DOM elements exist before manipulating them.
@@ -279,7 +278,7 @@ _**addEventListener\(\[event type\],\[function that you want to run when the eve
 document.addEventListener('DOMContentLoaded', function(){
 
     const helloDiv = document.getElementById("hello");
-    
+
     const alertClick = function() {
         console.log("HELLO WAS CLICKED");
     }
@@ -299,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const helloDiv = document.getElementById("hello");
 
     const goodbyDiv = document.getElementById("gb");
-    
+
     const alertClick = function() {
         console.log("HELLO WAS CLICKED");
     }
@@ -317,7 +316,6 @@ document.addEventListener('DOMContentLoaded', function(){
 #### Exercise:
 
 Research a different event listener \(not `click`\) and apply it to one of the `divs`. Share your code in slack when you're done!
-
 
 #### The Callback and the Event Object
 

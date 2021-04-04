@@ -209,7 +209,7 @@ for color in rainbow_colors_tuple:
 
 Answers
 
- \`\`\`python seasons = \("fall", "winter", "spring", "summer"\) print\(seasons\) for season in seasons: print\(season\) seasons\[0\] = "autumn" \# =&gt; TypeError: 'tuple' object does not support item assignment \`\`\`
+\`\`\`python seasons = \("fall", "winter", "spring", "summer"\) print\(seasons\) for season in seasons: print\(season\) seasons\[0\] = "autumn" \# =&gt; TypeError: 'tuple' object does not support item assignment \`\`\`
 
 ## Quick Review: Sets, Tuples, Lists
 

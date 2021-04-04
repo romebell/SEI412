@@ -1,4 +1,4 @@
-# Cherrio Data Scraping
+# Data Scraping
 
 ## Objectives
 
@@ -60,7 +60,6 @@ The request to the seattle neighborhoods url gave us the entire HTML document st
 
 ```javascript
 const cheerio = require('cheerio')
-
 ```
 
 Inside the callback function of request, we'll pass the html we got back into the `cheerio.load()` function. We store the result, which is a cheerio object, in the dollar sign variable because cheerio is designed to mimic jQuery selectors \(though technically, we could store it in any variable we'd like\).
@@ -78,11 +77,11 @@ Run the program and take a look at the `cheerio` object. How might we find the h
 
 * First you have to identify what content you're looking to scrape and how to access it. Let's aim to scrape the names of all the busineses listed on this page of Capitol Hill businesses. Open the dev tools and inspect the page to see if you can pinpoint the elements that have the relvant information for each result.
 
-Upon some inspection, we can see that the results live inside of a `search-results` `div`, which contains a `search-results-partner` `section` element. Inside *that* there is a `search-result-container` `div` that has a `search-result` `div` for each result.
+Upon some inspection, we can see that the results live inside of a `search-results` `div`, which contains a `search-results-partner` `section` element. Inside _that_ there is a `search-result-container` `div` that has a `search-result` `div` for each result.
 
 Let's try to target the name of the first business. Inspect the first `search-result` `div` and identify exactly where the business name lives.
 
-The business name can be found inside the `search-result-preview` `div` as both the `title` of the nested `a` tag, as well as the `h3` child of that anchor. 
+The business name can be found inside the `search-result-preview` `div` as both the `title` of the nested `a` tag, as well as the `h3` child of that anchor.
 
 First let's grab the first `search-result-preview` element. Cheerio uses [jQuery selectors](https://www.w3schools.com/jquery/jquery_ref_selectors.asp) to identify elements.
 
@@ -103,11 +102,12 @@ request(URL, (error, response, body) => {
     console.log(result)
 });
 ```
+
 Great! Now we know how to find the title of **one** business, but how do we get all of them?
 
 ### Step 4: Traverse the DOM \(scrape!\)
 
-Cheerio actually gives us the option of selecting the *first* or *all* of the elements that match the selector. Let's take a closer look at `('.search-result-preview')` by getting it's `length`:
+Cheerio actually gives us the option of selecting the _first_ or _all_ of the elements that match the selector. Let's take a closer look at `('.search-result-preview')` by getting it's `length`:
 
 ```javascript
 request(URL, (error, response, body) => {
@@ -116,6 +116,7 @@ request(URL, (error, response, body) => {
     console.log(result.length)
 })
 ```
+
 It looks like that result object actually contains all of the results on the page! Cheerio has iterators for traversing cheerio objects like this. Let's use the `each` iterator, which functions similarly to the javascript `Array.forEach()`:
 
 ```javascript
@@ -128,8 +129,7 @@ request(URL, (error, response, body) => {
 })
 ```
 
-Logging to the console is great, but in practice, we'll likely want to store all of these titles in an an array-like cheerio object. We can use the built in `.map()` iterator to pull out *just* the titles and store them in their own cheerio object: 
-
+Logging to the console is great, but in practice, we'll likely want to store all of these titles in an an array-like cheerio object. We can use the built in `.map()` iterator to pull out _just_ the titles and store them in their own cheerio object:
 
 ```javascript
 request(URL, (error, response, body) => {
@@ -173,42 +173,13 @@ request(URL, (error, response, body) => {
 })
 ```
 
-<details><summary>HINT</summary>
-<p>
+HINT
 
-```javascript
- $(element).find('.image-container').attr('style')
-```
+ \`\`\`javascript $\(element\).find\('.image-container'\).attr\('style'\) \`\`\` Now you need to modify the string to isolate the url!
 
-Now you need to modify the string to isolate the url!
+SOLUTION
 
-</p>
-</details>
-
-<details><summary>SOLUTION</summary>
-<p>
-
-```javascript
-request(URL, (error, response, body) => {
-    let $ = cheerio.load(body);
-    let results = $('.search-result-preview')
-    let filteredResults = results.map((index, element)=>{
-        let imgurl = $(element).find('.image-container').attr('style')
-        imgurl = imgurl.substring(22, imgurl.length-15)
-        return {
-            title: $(element).find('a').attr('title'),
-            img: imgurl
-        }
-    })
-    console.log(filteredResults.get())
-})
-```
-
-Now you need to modify the string to isolate the url!
-
-</p>
-</details>
-
+ \`\`\`javascript request\(URL, \(error, response, body\) =&gt; { let $ = cheerio.load\(body\); let results = $\('.search-result-preview'\) let filteredResults = results.map\(\(index, element\)=&gt;{ let imgurl = $\(element\).find\('.image-container'\).attr\('style'\) imgurl = imgurl.substring\(22, imgurl.length-15\) return { title: $\(element\).find\('a'\).attr\('title'\), img: imgurl } }\) console.log\(filteredResults.get\(\)\) }\) \`\`\` Now you need to modify the string to isolate the url!
 
 ## Some other resources on scraping
 

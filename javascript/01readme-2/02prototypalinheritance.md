@@ -70,7 +70,7 @@ Boat.prototype.getDimensions = function() {
 
 Now the Sailboat, Steamboat, and Motorboat can all use the `getDimensions` function, through what's called the **prototype chain**.
 
-![Prototype Chain](../../.gitbook/assets/prototype-chain.jpg)
+![Prototype Chain](../../.gitbook/assets/prototype-chain%20%281%29.jpg)
 
 Whenever an object doesn't directly have a function or property, it traverses up the prototype chain to see if any parents have it. In this case, SailBoat, Steamboat, and Motorboat go up to their parent \(Boat\) and see that Boat has a `getDimensions` function.
 

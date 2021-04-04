@@ -38,7 +38,7 @@ It's good that Python made the breaking changes. In this class we're going to us
 Here's the tools we're snaggin:
 
 * **Python 3** - the latest and greatest version of Python
-* **IPython**  - an enhanced Python shell that provides excellent features
+* **IPython** - an enhanced Python shell that provides excellent features
 
   beyond the normal Python shell. For example:
 
@@ -134,7 +134,7 @@ In [4]: s.
            endswith()     isascii()      istitle()      replace()      splitlines()
            expandtabs()   isdecimal()    isupper()      rfind()        startswith()
            find()         isdigit()      join()         rindex()       strip()
-           
+
 In [5]: s.upper
 Out[6]: <function str.upper>
 

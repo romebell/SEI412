@@ -493,9 +493,9 @@ Django has a special regular expression syntax that allows you to name patterns.
 * `?P<course_id>` identifies the regular expression as a parameter named `course_id`
 * `[0-9]+` is the regular expression that identifies what a `course_id` looks
 
-    like.  This regular expression means "match anything comprised of one or more
+  like. This regular expression means "match anything comprised of one or more
 
-    letters where each letter is a digit from zero through nine.
+  letters where each letter is a digit from zero through nine.
 
 The rest of the url definition you see is regular regular expression syntax:
 

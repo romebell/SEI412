@@ -116,7 +116,7 @@ This one is a bit of a challenge. Make a list of strings \(all lowercase\). Iter
 
 Answer
 
- \`\`\`python \# Capitalize the first letter a list of lowercase integers visible\_colors = \["red", "orange", "yellow", "green", "blue", "violet"\] for i in range\(len\(visible\_colors\)\): visible\_colors\[i\] = visible\_colors\[i\]\[0\].upper\(\) + visible\_colors\[i\]\[1::\] print\(visible\_colors\) \`\`\`
+\`\`\`python \# Capitalize the first letter a list of lowercase integers visible\_colors = \["red", "orange", "yellow", "green", "blue", "violet"\] for i in range\(len\(visible\_colors\)\): visible\_colors\[i\] = visible\_colors\[i\]\[0\].upper\(\) + visible\_colors\[i\]\[1::\] print\(visible\_colors\) \`\`\`
 
 ## While loops
 

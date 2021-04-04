@@ -206,7 +206,7 @@ Now, try it yourself. Write a new script:
 
 Answers
 
- \`\`\`python my\_file = open\("a\_file.txt", "r"\) file\_contents = my\_file.read\(\) my\_file.close\(\) my\_file\_script = open\("b\_file.txt", "w"\) my\_file\_script.write\(file\_contents\) my\_file\_script.close\(\) \`\`\` OR you can open multiple files at the top—you don't have to go sequentially \`\`\`python file\_to\_read = open\("a\_file.txt"\) file\_to\_write = open\("b\_file.txt", "w"\) file\_contents = file\_to\_read.read\(\) file\_to\_write.write\(file\_contents\) file\_to\_read.close\(\) file\_to\_write.close\(\) \`\`\`
+\`\`\`python my\_file = open\("a\_file.txt", "r"\) file\_contents = my\_file.read\(\) my\_file.close\(\) my\_file\_script = open\("b\_file.txt", "w"\) my\_file\_script.write\(file\_contents\) my\_file\_script.close\(\) \`\`\` OR you can open multiple files at the top—you don't have to go sequentially \`\`\`python file\_to\_read = open\("a\_file.txt"\) file\_to\_write = open\("b\_file.txt", "w"\) file\_contents = file\_to\_read.read\(\) file\_to\_write.write\(file\_contents\) file\_to\_read.close\(\) file\_to\_write.close\(\) \`\`\`
 
 ### Notes on `file.close()`
 
@@ -277,7 +277,7 @@ user_name = input("Please type your name: ")
 
 Answer
 
- \`\`\`python user\_name = input\("Please type your name: "\) user\_food = input\("Please type your favorite food: "\) file = open\("about\_me.txt", "w"\) file.write\("My name is " + user\_name + " and my favorite food is " + user\_food\) \`\`\`
+\`\`\`python user\_name = input\("Please type your name: "\) user\_food = input\("Please type your favorite food: "\) file = open\("about\_me.txt", "w"\) file.write\("My name is " + user\_name + " and my favorite food is " + user\_food\) \`\`\`
 
 ## Summary and Q&A
 

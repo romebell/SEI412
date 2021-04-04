@@ -48,10 +48,9 @@ This is a way we can create the database without being inside the psql command-l
        age = models.IntegerField()
    ```
 
-Django models are classes where each field corresponds to a column in the database. 
-Read more about models in Django and how to use the built-in Django ORM [here](https://docs.djangoproject.com/en/3.1/topics/db/models/)
+Django models are classes where each field corresponds to a column in the database. Read more about models in Django and how to use the built-in Django ORM [here](https://docs.djangoproject.com/en/3.1/topics/db/models/)
 
-2. Once we create or modify any model that we want to use in Django, we must run a database `migration`. A migration is a database action that makes any necessary changes to your db tables to prepare for storing specific data attributes of your models. If we create a new model, the migration is what actually creates the table in the database. If we change the structure of a model, the migration makes the changes in the database.
+1. Once we create or modify any model that we want to use in Django, we must run a database `migration`. A migration is a database action that makes any necessary changes to your db tables to prepare for storing specific data attributes of your models. If we create a new model, the migration is what actually creates the table in the database. If we change the structure of a model, the migration makes the changes in the database.
 
 Migrating is a two step process: First we create a migration file with the following command in our terminal:
 
@@ -101,7 +100,7 @@ def __str__(self):
     return self.name
 ```
 
-*You will need to quit and restart the shell to test the new string method*
+_You will need to quit and restart the shell to test the new string method_
 
 ### Common ORM Operations
 
@@ -225,34 +224,30 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
         return render(request, 'cats/show.html', {'cat': cat})
 ```
 
-
-You'll notice that we are searching by id. Django automatically assigns our models incrementing id numbers to organize our tables. Thanks Django!  That way we can look up every single cat by their unique `id` given to us. That `id` will travel with every model so we don't have to worry about assigning them one or trying to maintain it in the back-end! SO SWEET!
+You'll notice that we are searching by id. Django automatically assigns our models incrementing id numbers to organize our tables. Thanks Django! That way we can look up every single cat by their unique `id` given to us. That `id` will travel with every model so we don't have to worry about assigning them one or trying to maintain it in the back-end! SO SWEET!
 
 After we have made the DB call to retrieve our model, we will render a new view of the `show.html` template and pass in our model as an object for the template to use.
 
-
 1. We will now create a `show.html` template page in `templates/cats` to render our single model view:
 
-   ```markup
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>catcollector</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-  </head>
-  <body>
-    <h1>catcollector</h1>
+   \`\`\`markup
 
-    <h2> Name: {{ cat.name }}</h1>
-    <p> Breed: {{ cat.breed }}</p>
-    <p> Description: {{ cat.description }}</p>
-    <p> Age: {{ cat.age }}</p>
-  </body>
-</html>
-   ```
+&lt;!DOCTYPE html&gt;
 
+  catcollector  &lt;link rel="stylesheet" type="text/css" href="
+
+"&gt; &lt;/head&gt;  catcollector
+
+```text
+<h2> Name: {{ cat.name }}</h1>
+<p> Breed: {{ cat.breed }}</p>
+<p> Description: {{ cat.description }}</p>
+<p> Age: {{ cat.age }}</p>
+```
+
+&lt;/body&gt; &lt;/html&gt;
+
+```text
 2. We can now view a single Cat on its dedicated show page! Awesome! To make our application actually useful, we need to create a link from our `index.html` listing of the Cats over to our `show.html` page. Wrap the entire iteration of each Cat in an anchor tag in our `index.html` page:
 
    ```markup
@@ -269,9 +264,9 @@ After we have made the DB call to retrieve our model, we will render a new view 
      </a>
        <hr />
    {% endfor %}
-   ```
+```
 
-   Now we can navigate to the show from the index! Make the `catcollector` header a link that goes back to our index to make our site fully navigable.
+Now we can navigate to the show from the index! Make the `catcollector` header a link that goes back to our index to make our site fully navigable.
 
 ### Let's get partial!
 
@@ -314,7 +309,7 @@ We're beginning to see repeated code in our html templates so it makes sense to 
 {% block content %}
  ... index iterator goes here ...
 {% endblock %}
- ```
+```
 
-   Now try out our `/cats` route on the browser and you should see no change. Apply this code refactor to our show.html as well. Good work!
+Now try out our `/cats` route on the browser and you should see no change. Apply this code refactor to our show.html as well. Good work!
 

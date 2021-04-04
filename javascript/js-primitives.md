@@ -96,7 +96,7 @@ You can use operators on strings too! Try typing `"John" + "Jane"`. This is call
 
 ### Tangent: Type coercion
 
-[Type coercion is the process of converting value from one type to another](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/#:~:text=Type%20coercion%20is%20the%20process,Symbol%20(added%20in%20ES6).)
+\[Type coercion is the process of converting value from one type to another\]\([https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/\#:~:text=Type coercion is the process,Symbol \(added in ES6](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/#:~:text=Type%20coercion%20is%20the%20process,Symbol%20%28added%20in%20ES6)\).\)
 
 Try this...
 

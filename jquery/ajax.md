@@ -149,7 +149,7 @@ Take a moment to work in groups to write the pros and cons of both console.log s
 
 Use your debugging tools to investigate the response object and find out how to access the title and the url of the first result. Copy and paste parts of this line of code into your program so you have easy access to the important parts of your search results.
 
-![debugging view](../.gitbook/assets/debugging_view.png)
+![debugging view](../.gitbook/assets/debugging_view%20%281%29.png)
 
 Consider how the `forEach` and `map` functions may be useful tools to process this complicated objects.
 

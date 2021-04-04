@@ -38,7 +38,7 @@
 
   source code into compiled code before the program can be run, whereas interpreted
 
-  languages are run on the fly 
+  languages are run on the fly
 
 * general purpose scripting language that runs outside a browser
 * free and open source \(community development through Python Enhancement Proposals\)

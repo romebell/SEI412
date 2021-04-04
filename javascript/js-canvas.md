@@ -194,7 +194,7 @@ This is as easy as attaching another event handler to the canvas. We used a clic
   });
 ```
 
-![lots of rects with mouse movement!](../.gitbook/assets/mousemovement.png)
+![lots of rects with mouse movement!](../.gitbook/assets/mousemovement%20%281%29.png)
 
 Hooking the canvas up to draw a rectangle every time the mouse moves ends up drawing a lot of rectangles to the page! Remember that every time something is painted to the canvas it just stays there. Everything gets painted over everything else. Let's fix this up by erasing everything on the canvas each time the mouse moves and then drawing our one new rectangle.
 

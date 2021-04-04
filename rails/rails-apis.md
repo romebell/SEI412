@@ -59,5 +59,5 @@ Of course, test along the way. Otherwise, you're living in the...
 
 ## APIs w/keys in Rails
 
-See [Environment Variables with Foreman](../00-config-deployment/deploy-rails/foreman.md)
+See [Environment Variables with Foreman](../deployment-and-config/deploy-rails/foreman.md)
 
