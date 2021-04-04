@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to SEI 1019! You are officially a `Software Engineer`. 
+Welcome to SEI 412! You are officially a `Software Engineer`. 
 
 Please `download` the following content to your brain 🧠
 
@@ -12,10 +12,9 @@ Let's enjoy the ride 🎢 `together`. Let's go!
 
 |Role        | Name            | Slack       | Email |
 |:--         | :--             | :--         | :-- |
-|Lead Instructor  | Rome Bell | @rome | rome.bell@generalassemb.ly |
-|Lead Instructor | Pete Macaluso | @Pete Macaluso | pete.macaluso@generalassemb.ly
-|Instructor Associate | Dexter Hennington | @Dexter Hennington (he/him) SEIR-IA | dexter.hennington@generalassemb.ly |
-|Instructor Associate | Mike Zarra |  @Mike Zarra  | mike.zarra@generalassemb.ly |
+| Lead Instructor  | Rome Bell | @rome | rome.bell@generalassemb.ly |
+| Lead Instructor | Joshua Smith | @slack | email@generalassemb.ly
+| Instructor Associate | Paula Bannerman  | @slack | email@generalassemb.ly |
 
 ### GA SEI Graduation Requirements
 
@@ -35,7 +34,7 @@ When you complete our program with passing status, you unlock our alumni perks:
 
 ### Suggested Repo Structure
 ```
-/SEI1019
+/SEI412
     /unit_one
     /unit_two
     /unit_three
