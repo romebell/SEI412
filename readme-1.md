@@ -1,8 +1,8 @@
 # About These Notes
 
-![](https://res.cloudinary.com/briezh/image/upload/v1539805526/spaceneedle_ga_sea_ykjk40.jpg)
+![](https://user-images.githubusercontent.com/13144457/114315897-ecf26a00-9ab5-11eb-9a19-d6f14c261c73.jpg)
 
-Welcome to GA Atlanta! This is the notes repository for our Software Engineering Immersive \(formerly known as Web Development Immersive\). You can view the content in a more searchable/friendly format on [Gitbook](https://romebell.gitbook.io/sei-1019/)!
+Welcome to GA DC! This is the notes repository for our Software Engineering Immersive \(formerly known as Software Engineering Immersive\). You can view the content in a more searchable/friendly format on [Gitbook](https://romebell.gitbook.io/sei-412/)!
 
 ![GA Logo](.gitbook/assets/ga_cog.png)
 
