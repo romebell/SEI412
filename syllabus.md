@@ -1,5 +1,3 @@
-# Syllabus
-
 ## Syllabus
 
 | Unit | Tech | Weeks | Topics |
