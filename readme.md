@@ -51,7 +51,7 @@ When you complete our program with passing status, you unlock our alumni perks:
             /css-airbnb
         /labs
             /loops-conditionals-practice
-        /project
+        /projects
         /resources
         /challenge-problems
             /two-sum
