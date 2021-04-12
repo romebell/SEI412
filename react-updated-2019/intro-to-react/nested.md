@@ -10,7 +10,7 @@ _After this lesson, you will be able to:_
 
 ![](https://res.cloudinary.com/briezh/image/upload/v1556226718/nested-components-we-need-to-go-deeper_pt62rf.jpg)
 
-## SEI1019 We Do: Nested Components
+## SEI412 We Do: Nested Components
 
 Create a `Comment.js` file inside the `src` directory. Add the following code to it:
 
