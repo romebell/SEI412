@@ -16,7 +16,7 @@ This is totally optional. If you choose to do this, please update every 3-6 mont
 * On your terminal, run 
 
   ```text
-  git remote add upstream git@github.com:romebell/SEI1019.git
+  git remote add upstream git@github.com:romebell/SEI412.git
   ```
 
 * Install the Gitbook CLI tool by running 
