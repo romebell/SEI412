@@ -17,8 +17,11 @@ Let's enjoy the ride 🎢 `together`. Let's go!
 | Name | Role | Slack | Email |
 | :--- | :--- | :--- | :--- |
 | Rome Bell | Lead Instructor | @rome | rome.bell@generalassemb.ly |
-| Joshua Smith | Lead Instructor | @slack | email@generalassemb.ly |
-| Paula Bannerman | Instructor Associate | @slack | email@generalassemb.ly |
+| Joshua Smith | Lead Instructor | @Joshua Smith | joshua.smith@generalassemb.ly |
+| Paula Bannerman | Instructor Associate | @Paula Bannerman (Dcartist)
+ | paula.bannerman@generalassemb.ly |
+| Brian Krabec | Instructor Associate | @Brian Krabec
+ | brian.krabec@generalassemb.ly |
 
 ## GA SEI Graduation Requirements
 
