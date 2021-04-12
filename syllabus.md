@@ -9,7 +9,7 @@
 | \(3\) Front-End Framework | React/Redux/Mongo \(MERN\) | 10 - 12 | JWT Token Auth, MongoDB |
 | \(4\) Full-Stack Web Development | Python/Flask | 4 - 6 | Data Structures & Algorithms, Whiteboarding, Python fundamentals |
 
-## Schedule
+## Calendar (updated weekly)
 
 [SEI 412 Calendar](https://calendar.google.com/calendar/embed?src=c_94jlsa99ds30jjeeb694iqo2o0%40group.calendar.google.com&ctz=America%2FLos_Angeles)\*
 
