@@ -64,7 +64,7 @@ Something to know is that some of the lessons here are more historical and haven
 
 ### Origin of this Gitbook
 
-Due to the changing nature of course delivery format in response to COVID-19, this course is only offered remotely at this time, and the student pool spans multiple campuses. This version of the notes is tailored for the SEI 1019, offered remotely through the Atlanta campus. It will be a working set of documents as SEI instructors continually adapt this originally campus-driven curriculum for the new demands of work-from-home life. The idea is to front-load each day with lessons in the morning, leaving the majority of the afternoon for flexibe workshop/lab time to accomodate screen-lecture attention spans and the unique demands that families and individuals face during a global pandemic and social unrest over racial injustice.
+Due to the changing nature of course delivery format in response to COVID-19, this course is only offered remotely at this time, and the student pool spans multiple campuses. This version of the notes is tailored for the SEI 412, offered remotely through the Atlanta campus. It will be a working set of documents as SEI instructors continually adapt this originally campus-driven curriculum for the new demands of work-from-home life. The idea is to front-load each day with lessons in the morning, leaving the majority of the afternoon for flexibe workshop/lab time to accomodate screen-lecture attention spans and the unique demands that families and individuals face during a global pandemic and social unrest over racial injustice.
 
 ## Licensing
 
