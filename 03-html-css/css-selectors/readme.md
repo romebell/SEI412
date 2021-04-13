@@ -529,21 +529,20 @@ One of the most important concepts with CSS is specificity. Imagine you select a
 
 Every selector has its place in the specificity hierarchy, and if two selectors apply to the same element, the one with higher specificity wins.  Overall, there are four distinct factors that define the specificity level of a given selector: inline styles, IDs, classes+attributes and elements.  You can calculate CSS specificity with CSS Specificity Calculator:
 
-![calculationbase](https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png)
+![calculationbase](https://css-tricks.com/wp-content/uploads/2021/01/specificity-calculationbase_rhrovi.png)
 
 ###Calculating specificity
 
-![calc 1](https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png)
+![calc 1](https://css-tricks.com/wp-content/uploads/2021/01/cssspecificity-calc-1_kqzhog.png)
 
 *This is calculated as 113*
 
-![calc 2](https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png)
+![calc 2](https://css-tricks.com/wp-content/uploads/2021/01/cssspecificity-calc-2.png)
 
 
 *This is calculated as 23*
 
-![calc 4]](https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png)
-
+![calc 4]](https://css-tricks.com/wp-content/uploads/2021/01/cssspecificity-calc-4.png)
 *This is calculated as 1000*
 
 A couple of rules to think about:
