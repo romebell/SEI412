@@ -4,7 +4,11 @@ description: Welcome to SEI 412!
 
 # Introduction
 
+<<<<<<< HEAD
  You are officially a `Software Engineer`.
+=======
+Welcome to SEI 412! You are officially a `Software Engineer`.
+>>>>>>> 249214144d50c2a64b883df51195fe73d3e45330
 
 Please `download` the following content to your brain 🧠
 
