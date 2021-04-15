@@ -89,7 +89,7 @@ Arrays come with special methods attached to themselves that allow you to perfor
 * `.sort()` - sort the elements in an array 
 * `.reverse()` - reverse the array
 
-
+### Other useful methods
 * `.concat([1, 2])` - concatenate two arrays together
 * `.slice(1, 3)` - return a copy of a portion of an array
 * `.splice()` - alter an array by adding or removing elements
