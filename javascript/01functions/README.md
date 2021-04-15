@@ -29,7 +29,7 @@ Note that a function is assigned to a variable, and we can **call** the function
 **Parts of a function**
 
 ```text
-const FUNCTIONNAME = function() {
+const functionName = function() {
     //CODE
 }
 ```
