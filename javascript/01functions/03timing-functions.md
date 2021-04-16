@@ -14,7 +14,7 @@ function alarm() {
     console.log("Wake up!");
 }
 
-setTimeout(alarm, 10000)
+setTimeout(alarm, 10000);
 ```
 
 `setInterval` also takes two arguments:
@@ -47,7 +47,7 @@ function annoy() {
 }
 
 function shutDown() {
-    console.log('No!')
+    console.log('No!');
 }
 
 var kids = setInterval(annoy, 1000);
@@ -64,7 +64,7 @@ function hush() {
     clearInterval(kids);
 }
 var kids = setInterval(annoy, 1000);
-setTimeout(hush, 10000)
+setTimeout(hush, 10000);
 ```
 
 And you can disable your `setTimeout` before the function fires using `clearTimeout`:
@@ -81,7 +81,7 @@ function turnOffSnooze() {
 
 var snoozeAlarm = setTimeout(alarmRing, 5000);
 
-var snoozeOff = setTimeout(turnOffSnooze, 3000)
+var snoozeOff = setTimeout(turnOffSnooze, 3000);
 ```
 
 ### Exercises:
