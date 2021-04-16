@@ -50,8 +50,8 @@ function shutDown() {
     console.log('No!');
 }
 
-var kids = setInterval(annoy, 1000);
-var parents = setInterval(shutDown, 3200);
+const kids = setInterval(annoy, 1000);
+const parents = setInterval(shutDown, 3200);
 ```
 
 You can disable an interval using `clearInterval`:
@@ -63,7 +63,7 @@ function annoy() {
 function hush() {
     clearInterval(kids);
 }
-var kids = setInterval(annoy, 1000);
+const kids = setInterval(annoy, 1000);
 setTimeout(hush, 10000);
 ```
 
@@ -79,9 +79,9 @@ function turnOffSnooze() {
     clearTimeout(snoozeAlarm);
 }
 
-var snoozeAlarm = setTimeout(alarmRing, 5000);
+const snoozeAlarm = setTimeout(alarmRing, 3000);
 
-var snoozeOff = setTimeout(turnOffSnooze, 3000);
+const snoozeOff = setTimeout(turnOffSnooze, 10000);
 ```
 
 ### Exercises:
