@@ -12,11 +12,11 @@ A little while back, a couple wonderful folks at Twitter created a front end fra
 
 ### How to include it
 
-You can include Bootstrap multiple ways, the easiest to start is a CDN. As we continue to use Rails and more robust tooling, we can also use package managers like `npm`. Our current setup won't support this, but we'll use it in time!
+You can include Bootstrap multiple ways, the easiest to start is a CDN. As we continue to use React and more robust tooling, we can also use package managers like `npm` to import react and other libraries. Our current setup won't support this, but we'll use it in time!
 
 1. CDN \(content delivery network - someone else hosts the library/framework and you access it via a URL\)
 2. Include the actual CSS and JS files - great for offline development
-3. Package manager \(`npm`, Ruby gem\)
+3. Package manager \(`npm`)
 
 [BootstrapCDN](https://www.bootstrapcdn.com/) is a great place to start to see what the latest Bootstrap versions are.
 
@@ -183,9 +183,9 @@ Bootstrap comes with quite a few button default sizes and colors, to add these m
 
 You can also add .btn-lg, .btn-sm, or .btn-xs for additional sizes.
 
-### Images \(img-rounded, img-responsive, img-circle\)
+### Images \(rounded, img-fluid, rounded-circle\)
 
-Bootstrap helps you format images using img-rounded \(rounds the corners\), img-circle \(makes the image a circle\) and img-thumbnail \(adds a border\). You can also add a class of img-responsive to your image to make it scale well when the screen size changes \(this sets its max-width to 100% and the height to auto\)
+Bootstrap helps you format images using rounded \(rounds the corners\), rounded-circle \(makes the image a circle\) and img-thumbnail \(adds a border\). You can also add a class of img-fluid to your image to make it scale well when the screen size changes \(this sets its max-width to 100% and the height to auto\)
 
 ### Forms
 
