@@ -30,10 +30,11 @@ To make sure that all your bootstrap styles behave properly, it's always best to
 
 The bootstrap grid is based on 12 columns that can are accessible using by placing the columns in `<div class = "row">` \(you must place your columns in a row\) and then you use the following classes for these screen sizes.
 
-* col-xs = &lt;768px
-* col-sm = &lt;992px
-* col-md &lt;1200px
-* col-lg &gt;1200px
+* col- = &lt;576px
+* col-sm = &gt;576px
+* col-md = &gt;768px
+* col-lg &gt;992px
+* col-xl &gt;1200px
 
 Here is an example of an two column layout.
 
@@ -194,43 +195,5 @@ Bootstrap is also very helpful when you need to style your forms. All textual `<
 
 Bootstrap can also do some nifty things for you with it's JavaScript plugins. This includes carousels, modals, popovers, dropdowns and other nice pieces of functionality that will really spruce up your app. Always make sure you understand what the code is doing before copying and pasting it. Fortunately, this is not too challenging and Bootstrap has excellent documentation. As always, if you're confused or things are breaking - google around. Bootstrap is pretty much ubiquitous and it is likely that the problems you have, other people have had \(and hopefully solved\) as well.
 
-## Bootstrap Snippets
 
-Most text editor have a feature called "snippets" that allow you to use shortcuts to type frequently used commands. There are some built in and there are packages that contain collections of them that you can install.
-
-### Atom
-
-Install Bootstrap 3 package on the command line with the atom package manager:
-
-```text
-apm install atom-bootstrap3
-```
-
-Now you've got lots of handy snippets installed. Open a new file that has a `.html` extension so the snippets will be activated. Type `html-` and you'll see several options. Choose "Basic HTML Template" and you'll see an entire page appear!
-
-### Sublime Text
-
-One built-in snippet we've been using is `html` you go to a .html file type `html` and hit tab and get a basic HTML page template.
-
-Let's make sure we have snippets to generate a basic HTML page template, and a snippet to bring in reference to Bootstrap files.
-
-There is a bootstrap snippet package that you can install by loading sublime and...
-
-* press `CMD+SHIFT+P`
-* type `install`
-* select `package control: install package`
-* wait a second...
-* type `bootstrap`
-* select `Bootstrap 3 Snippets`
-
-Once this is installed you can do a bunch of great stuff including loading the bootstrap cdn by typing `bs3-cdn` \(inside the `<head>` tag\) and hitting tab.
-
-You can also do:
-
-* `bs3-container` TAB - creates a container div
-* `bs3-row` TAB - creates a row
-* `bs3-col` TAB - creates a column
-* `bs3-form` TAB - creates a form
-
-For more uses see the [Bootstrap 3 snippet docs](https://github.com/JasonMortonNZ/bs3-sublime-plugin)
 
