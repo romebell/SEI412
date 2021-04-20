@@ -51,7 +51,7 @@ You can also offset and nest your columns. When you offset a column, you add a c
 
 ```markup
 <div class="row">
-  <div class="col-md-3 col-md-offset-3">
+  <div class="col-md-3 offset-3">
     This column takes 1/4 of the width of the page and is moved to the  right by 1/4 of the page
   </div>
 </div>
