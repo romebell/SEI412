@@ -116,6 +116,18 @@ fetch('https://www.reddit.com/search.json?q=kittens')
 // > Object {kind: "Listing", data: Object}
 ```
 
+## APIs to hit
+
+Here are a few APIs you can use to practice AJAX calls. They either won't save changes, or won't allow you to use POST, PUT or DELETE, so they're safe to play with.
+
+[Open Movie Database API](http://www.omdbapi.com/)
+
+[Acromine Acronym API](http://www.nactem.ac.uk/software/acromine/rest.html)
+
+[Pokemon API](http://pokeapi.co/)
+
+[Star Wars API](https://swapi.co/)
+
 ## Putting AJAX On the Page
 
 It's no fun simply logging search results to the page. Let's put content on the page!
@@ -157,18 +169,6 @@ Use your debugging tools to investigate the response object and find out how to 
 Consider how the `forEach` and `map` functions may be useful tools to process these complicated objects.
 
 Now you're cooking with gas.
-
-## APIs to hit
-
-Here are a few APIs you can use to practice AJAX calls. They either won't save changes, or won't allow you to use POST, PUT or DELETE, so they're safe to play with.
-
-[Open Movie Database API](http://www.omdbapi.com/)
-
-[Acromine Acronym API](http://www.nactem.ac.uk/software/acromine/rest.html)
-
-[Pokemon API](http://pokeapi.co/)
-
-[Star Wars API](https://swapi.co/)
 
 ### Cross-Origin Requests
 
