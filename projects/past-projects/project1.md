@@ -4,11 +4,22 @@
 
 ## Recent Projects
 
+### SEI 1019
+* [Fuel Cell Fury](https://zfinnan.github.io/) - Zach Finnan \(SEI 1019\) | [Github](https://github.com/zfinnan/my-cool-game)
+* [Fruitris](https://sschneeberg.github.io) - Simone Schneeberg \(SEI 1019\) | [Github](https://github.com/sschneeberg/fruitris)
+* [Crazy Driver](https://lev-choubine.github.io/) - Lev Choubine \(SEI 1019\) | [Github](https://github.com/lev-choubine/Crazy-Driver)
+* [Rocket Sauce](https://tcgilbert.github.io/) - Thomas Gilbert \(SEI 1019\) | [Github](https://github.com/tcgilbert/rocket-sauce)
+* [Save The Burger](https://canourrea23.github.io/) - Carolina Urrea \(SEI 1019\) | [Github](https://github.com/canourrea23/save-the-burger)
+* [textRPG](https://nikkihmltn.github.io/) - Nicole Hamilton \(SEI 1019\) | [Github](https://github.com/NikkiHmltn/textRPG)
+
+### SEI 713
 * [Super Skier Bro](https://bgoldenberg161.github.io/SuperSkierBro/) - Branden Goldenberg \(SEI 713\)
 * [The Snake Game](https://alpha-martinez.github.io/project-1/) - Alpha Martinez \(SEI 713\)
 * [Cactus The Impaler](https://blangwell.github.io/cactus-the-impaler/) - Barent Lagwell \(SEI 713\)
 * [National Flag Game](https://margaret-jihua.github.io/national-flag-game/) - Margaret Jihua
 * [Balloon Bomber](https://imjchiang.github.io/project-1/) - Joshua Chiang \(SEI 713\)
+
+### WDI
 * [Bee Free](https://009kings.github.io/beeFree/) - Sarah King \(WDI 22\)
 * [A Whale's Tale](http://motionless-toe.surge.sh) - Gil Weinstock \(WDI 18\)
 * [Chairman of the Board](http://seancswanson.com/chairman-of-the-board/) - Sean Swanson \(WDI 16\)
@@ -18,7 +29,7 @@
 * [2048 \(Dynamic Board Size\)](https://devangrose.github.io/) - Devan Grose \(WDI 20\)
 * [Gorilla Surf Game](https://jonmlinch.github.io/game-project/) - Jon Linch \(WDI 20\)
 
-## Seattle Archive \(2014-2016\)
+## Archive \(2014-2016\)
 
 ### WDI SEA 06
 
