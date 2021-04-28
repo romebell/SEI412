@@ -37,13 +37,13 @@ Let's see nodemon in action! Try running your `my-first-node-app` using nodemon.
 Now open up `my-first-node-app` in sublime. Add the following code to `index.js`:
 
 ```javascript
-let i = 0
+let i = 0;
 
-var myTimer = setInterval(count, 1000)
+const myTimer = setInterval(count, 1000);
 
 count = () => {
-    console.log(i)
-    i++
+    console.log(i);
+    i++;
 }
 ```
 
@@ -66,7 +66,7 @@ We installed nodemon globally, but most node packages will only be useful for sp
 Moment is a date formatting module. Instead of the mess of text that comes out when you create a regular date with JavaScript using the date class, we can pretty-print the date in a human readable way.
 
 ```javascript
-console.log(new Date())
+console.log(new Date());
 // Prints: Fri Apr 05 2019 09:58:38 GMT-0700 (Pacific Daylight Time)
 ```
 
@@ -86,7 +86,7 @@ console.log(new Date())
 * Let's use the moment module to print a date! Add the following code to your `index.js` file:
 
 ```javascript
-console.log(moment().format("MMM Do YYYY"))
+console.log(moment().format("MMM DD YYYY"))
 ```
 
 * What does this print? You should have seen whatever today's date was in the format: 3-letter month, numerical day plus ordinal, and 4-digit year. For example: 
