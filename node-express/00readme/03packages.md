@@ -34,7 +34,7 @@ Since we're installing it globally \(that's where the `-g` flag comes in\), it d
 
 Let's see nodemon in action! Try running your `my-first-node-app` using nodemon. Simply `cd` into the directory, then run `nodemon`. Nodemon knows to run the file that corresponds to `main:` in your `package.json`.
 
-Now open up `my-first-node-app` in sublime. Add the following code to `index.js`:
+Now open up `my-first-node-app` in vs-code. Add the following code to `index.js`:
 
 ```javascript
 let i = 0;
@@ -105,7 +105,11 @@ Wednesday the 11th of September in the year 1985
 
 SOLUTION
 
- \`\`\`js const moment = require\('moment'\) // Prints today's date console.log\(moment\(\).format\("MMM Do YYYY"\)\) // Prints my birthday console.log\(moment\('09-11-1985', 'MM DD YYYY'\).format\("dddd \[the\] Do \[of\] MMMM \[in the year\] YYYY"\)\) // Prints how long ago my birthday was console.log\('Oh boy, that was', moment\('09-11-1985', 'MM DD YYYY'\).fromNow\(\), 'years ago!'\) \`\`\`
+ ```js 
+ 
+ const moment = require\('moment'\) // Prints today's date console.log\(moment\(\).format\("MMM Do YYYY"\)\) // Prints my birthday console.log\(moment\('09-11-1985', 'MM DD YYYY'\).format\("dddd \[the\] Do \[of\] MMMM \[in the year\] YYYY"\)\) // Prints how long ago my birthday was console.log\('Oh boy, that was', moment\('09-11-1985', 'MM DD YYYY'\).fromNow\(\), 'years ago!'\) 
+
+```
 
 #### Git Ignore File
 
