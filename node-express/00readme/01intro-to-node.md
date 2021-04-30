@@ -3,9 +3,9 @@
 ## Review: Client-Server
 
 * What's the front-end \(client side\)?
-  * Broswer
+  * Browser
   * User interface
-  * Html, CSS, Javascript
+  * HTML, CSS, Javascript
 * What's the back-end \(server-side\)?
   * what's going on behind the scenes
   * data transactions/business logic
