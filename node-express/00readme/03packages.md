@@ -107,9 +107,15 @@ Wednesday the 11th of September in the year 1985
 <summary>SOLUTION</summary>
 <br>
 
- ```js 
+ ```javascript
  
- const moment = require\('moment'\) // Prints today's date console.log\(moment\(\).format\("MMM Do YYYY"\)\) // Prints my birthday console.log\(moment\('09-11-1985', 'MM DD YYYY'\).format\("dddd \[the\] Do \[of\] MMMM \[in the year\] YYYY"\)\) // Prints how long ago my birthday was console.log\('Oh boy, that was', moment\('09-11-1985', 'MM DD YYYY'\).fromNow\(\), 'years ago!'\) 
+ const moment = require('moment') 
+ // Prints today's date 
+ console.log(moment().format("MMM Do YYYY")) 
+ // Prints my birthday 
+ console.log(moment('09-20-1885', 'MM DD YYYY').format("dddd [the] Do [of] MMMM [in the year] YYYY")) 
+ // Prints how long ago my birthday was 
+ console.log('Oh boy, that was', moment('09-11-1985', 'MM DD YYYY').fromNow(), 'years ago!') 
 
 ```
 </details>
