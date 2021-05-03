@@ -120,7 +120,7 @@ In this excercise, you will make a Hello World app from scratch by using the the
 7. Check to see that your program is working by visiting `localhost:8000` in your browser.
 
 <details>
-    <summary>STUCK? >> SOLUTION</summary>
+    <summary>SOLUTION</summary>
     
  ```js 
 const http = require('http');
