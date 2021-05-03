@@ -121,16 +121,17 @@ In this excercise, you will make a Hello World app from scratch by using the the
 
 <details>
     <summary>SOLUTION</summary>
-    
- ```js 
-const http = require('http');
- 
-http.createServer((req, res) => { 
-   res.write('Hello, World!');
-   res.end();
-})
-.listen(8000);
- ```
+     
+     ```js 
+    const http = require('http');
+
+    http.createServer((req, res) => { 
+       res.write('Hello, World!');
+       res.end();
+    })
+    .listen(8000);
+     ```
+     
 </details>
 
 
