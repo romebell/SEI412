@@ -251,13 +251,13 @@ A select statement allows you to get data from the database. Here are the [docs 
 Create a new database to hold a movies table:
 
 ```sql
-CREATE DATABASE testdb;
+CREATE DATABASE moviesdb;
 ```
 
 Connect to the new database:
 
 ```sql
-\connect testdb;
+\connect moviesdb;
 ```
 
 Given this table:
