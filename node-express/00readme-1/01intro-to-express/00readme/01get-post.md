@@ -1,6 +1,6 @@
 # Get and Post
 
-**NOTE**: Please get the starter code for this lab [here](https://github.com/WDI-SEA/RESTful-cryptids).
+**NOTE**: Please get the starter code for this codealong/lab [here](https://git.generalassemb.ly/SEI-412/RESTful-creatures-codealong).
 
 So far, we've only been rendering views, which is why we've been using GET for all of our routes. Now that we're working with data, we'll start to see how the other HTTP verbs come into play. Here we will focus on `GET` and `POST`.
 
