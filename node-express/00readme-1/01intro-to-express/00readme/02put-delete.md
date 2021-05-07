@@ -35,7 +35,7 @@ _By default, `method-override` will only override `POST` methods, because having
 **2.** Import the module
 
 ```javascript
-var methodOverride = require('method-override');
+const methodOverride = require('method-override');
 ```
 
 _**3.**_ Configure middleware \(make sure it lives above any other middleware code that uses the request method\):
@@ -75,14 +75,14 @@ Since we can only use `POST` methods to activate the `method-override` functiona
 
 ```javascript
 app.delete('/dinosaurs/:idx', function(req, res){
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  dinosaurs = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
 
   // remove the deleted dinosaur from the dinosaurs array
-  dinosaurs.splice(req.params.idx, 1)
+  dinoData.splice(req.params.idx, 1)
 
   // save the new dinosaurs to the data.json file
-  fs.writeFileSync('./dinosaurs.json', JSON.stringify(dinosaurs));
+  fs.writeFileSync('./dinosaurs.json', JSON.stringify(dinoData));
 
   //redirect to the GET /dinosaurs route (index)
   res.redirect('/dinosaurs');
@@ -135,8 +135,8 @@ We need a `GET` route to view this form!
 
 ```javascript
 app.get('/dinosaurs/edit/:idx', function(req, res){
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  var dinoData = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
   res.render('dinosaurs/edit', {dino: dinoData[req.params.idx], dinoId: req.params.idx});
 });
 ```
@@ -147,15 +147,15 @@ Finally we can write our `PUT` route! The form submission will return the editte
 
 ```javascript
 app.put('/dinosaurs/:idx', function(req, res){
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  dinosaurs = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
 
   //re-assign the name and type fields of the dinosaur to be editted
-  dinosaurs[req.params.idx].name = req.body.name;
-  dinosaurs[req.params.idx].type = req.body.type;
+  dinoData[req.params.idx].name = req.body.name;
+  dinoData[req.params.idx].type = req.body.type;
 
    // save the editted dinosaurs to the data.json file
-  fs.writeFileSync('./dinosaurs.json', JSON.stringify(dinosaurs));
+  fs.writeFileSync('./dinosaurs.json', JSON.stringify(dinoData));
   res.redirect('/dinosaurs');
 });
 ```
