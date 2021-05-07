@@ -52,7 +52,7 @@ Since we can only use `POST` methods to activate the `method-override` functiona
 
 **dinosaurs/index.ejs**
 
-```markup
+```ejs
 <form method="GET" action="/dinosaurs">
   <label for="nameFilter">Filter by Name</label>
   <input id="nameFilter" type="text" name="nameFilter">
@@ -95,7 +95,7 @@ First we need a way for the user to edit an item. Add an edit link to the dinosa
 
 **/dinosaurs/index.ejs**
 
-```markup
+```ejs
 <form method="GET" action="/dinosaurs">
   <label for="nameFilter">Filter by Name</label>
   <input id="nameFilter" type="text" name="nameFilter">
@@ -119,7 +119,7 @@ Now we have to create a form for editting the information and submitting the `PU
 
 **/dinosaurs/edit.ejs**
 
-```markup
+```ejs
 <form method="POST" action="/dinosaurs/<%=dinoId%>/?_method=PUT">
     <label>Name</label>
     <input type="text" name="name" value="<%= dino.name %>">
