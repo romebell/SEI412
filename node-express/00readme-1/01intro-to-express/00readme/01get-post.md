@@ -60,7 +60,8 @@ Format the ejs to display the data. Assume that we will pass the data in as `myD
 To access our data, we'll use the `fs` \(filesystem\) core module. Import this module in `index.js`
 
 ```javascript
-var fs = require('fs');
+
+fs = require('fs');
 ```
 
 Now let's pull in our data and take a took at it.
@@ -68,7 +69,7 @@ Now let's pull in our data and take a took at it.
 ```javascript
 // lists all dinosaurs
 app.get('/dinosaurs', function(req, res) {
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
   console.log(dinosaurs);
 });
 ```
@@ -82,8 +83,8 @@ Try parsing the data before printing it:
 ```javascript
 // lists all dinosaurs
 app.get('/dinosaurs', function(req, res) {
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  var dinoData = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
   console.log(dinoData);
 });
 ```
@@ -93,8 +94,8 @@ That's more like it! Now lets send it to our EJS file:
 ```javascript
 // lists all dinosaurs
 app.get('/dinosaurs', function(req, res) {
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  var dinoData = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
   res.render('dinosaurs/index', {myDinos: dinoData});
 });
 ```
@@ -119,11 +120,11 @@ Now let's write our show route. We can access the index from the url through the
 //express show route for dinosaurs (lists one dinosaur)
 app.get('/dinosaurs/:idx', function(req, res) {
   // get dinosaurs
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  var dinoData = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
 
   //get array index from url parameter
-  var dinoIndex = parseInt(req.params.idx);
+  const dinoIndex = parseInt(req.params.idx);
 
   //render page with data of the specified animal
   res.render('dinosaurs/show', {myDino: dinoData[dinoIndex]});
@@ -174,10 +175,10 @@ This middleware will store the data submitted from the form in a user-friendly `
 _**index.js**_
 
 ```javascript
-var express = require('express');
-var app = express();
-var ejsLayouts = require('express-ejs-layouts');
-var fs = require('fs');
+const express = require('express');
+const app = express();
+const ejsLayouts = require('express-ejs-layouts');
+const fs = require('fs');
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
@@ -216,7 +217,7 @@ Generally, the code in the **express route** would contain code that would CREAT
 ```javascript
 app.post('/dinosaurs', function(req, res) {
   // read dinosaurs file
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
   dinosaurs = JSON.parse(dinosaurs);
 
   // add item to dinosaurs array
@@ -252,10 +253,10 @@ The idea here is that the search bar allows the user to filter what's on the pag
 
 ```javascript
 app.get('/dinosaurs', function(req, res) {
-  var dinosaurs = fs.readFileSync('./dinosaurs.json');
-  var dinoData = JSON.parse(dinosaurs);
+  const dinosaurs = fs.readFileSync('./dinosaurs.json');
+  const dinoData = JSON.parse(dinosaurs);
 
-  var nameFilter = req.query.nameFilter;
+  const nameFilter = req.query.nameFilter;
 
   if (nameFilter) {
     dinoData = dinoData.filter(function(dino) {
