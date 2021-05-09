@@ -4,8 +4,8 @@
 | :--- | :--- | :--- | :--- |
 | \(1\) Front-End Web Development | HTML/CSS/JS | 1 - 3 | Version control, JavaScript Fundamentals, DOM manipulation, AJAX |
 | \(2\) Second Language Full-Stack Development | Node/Express/PostgreSQL | 7 - 9 | Local Auth, RESTful Routing, ORMs |
-| \(3\) Front-End Framework | React/Redux/Mongo \(MERN\) | 10 - 12 | JWT Token Auth, MongoDB |
-| \(4\) Full-Stack Web Development | Python/Flask | 4 - 6 | Data Structures & Algorithms, Whiteboarding, Python fundamentals |
+| \(3\) Front-End Framework | React/Mongo \(MERN\) | 10 - 12 | JWT Token Auth, MongoDB |
+| \(4\) Full-Stack Web Development | Python/Django/Flask | 4 - 6 | Data Structures & Algorithms, Whiteboarding, Python fundamentals |
 
 ## Calendar (updated weekly)
 
