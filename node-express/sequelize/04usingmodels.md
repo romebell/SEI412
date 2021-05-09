@@ -14,13 +14,16 @@ const db = require('./models')
 db.user.create({
     firstName: 'Rome',
     lastName: 'Bell',
-    age: 32
+    age: 33
 }).then(createdUser=>{
     // the create promise returns the
     // new row of data that has been created
     // (otherwise it throws an error)
     console.log(createdUser)
 })
+
+
+const anotherUser = await db.user.create({ firstName: 'Josh', lastName: 'Smith', age: 49000 });
 ```
 
 ### Read One
