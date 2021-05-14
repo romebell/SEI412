@@ -43,8 +43,7 @@ Your app must:
 
 ## Useful Resources
 
-* [**Heroku**](http://www.heroku.com) _\(for hosting your back-end\)_
-* [**How to write user stories that don't suck**](https://revelry.co/user-stories-that-dont-suck/) _\(for a few user story tips\)_
+* [**How to write user stories that don't suck**](https://revelry.co/resources/development/user-stories-that-dont-suck/) _\(for a few user story tips\)_
 * [**Presenting Information Architecture**](http://webstyleguide.com/wsg3/3-information-architecture/4-presenting-information.html) _\(for more insight into wireframing\)_
 
 ## Project Feedback + Evaluation
