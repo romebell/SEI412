@@ -303,7 +303,7 @@ Why did we write `onClick={this.increaseMood}` rather than `onClick={this.increa
 
 ## Mood Tracker
 
-All together, your `App.js` file now looks like this:
+All together, your `MoodTracker.js` file now looks like this:
 
 ```javascript
 // Bring in React and Component from React.
