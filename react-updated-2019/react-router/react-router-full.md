@@ -53,8 +53,8 @@ Remember, the URL routes are paths off our main website. We could put our websit
 
 Our routes say that if someone goes to `ourdomain.com/` they will see our home page with welcome text.
 
-* The content of this page will all be defined in its own `Home` component in a file called `home.js`.
-* If someone navigates to the URL `ourdomain.com/contact`, they will see content with the business address, a phone number, and an email. All of this content will be defined in a component called `Contact` in a file called `contact.js`.
+* The content of this page will all be defined in its own `Home` component in a file called `Home.js`.
+* If someone navigates to the URL `ourdomain.com/contact`, they will see content with the business address, a phone number, and an email. All of this content will be defined in a component called `Contact` in a file called `Contact.js`.
 
 In the below codealong, we will walk through building this out together.
 
