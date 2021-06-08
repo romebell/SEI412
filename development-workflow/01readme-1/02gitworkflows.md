@@ -47,8 +47,8 @@ git remote add upstream git@github.com:gitmasterusername/forking-test.git
 ```
 
 * Testing the upstreams
-  * Have the git master create a change in the main repo on the `master` branch. Add the change, commit it, and push it to Github
-  * Once the git master has pushed changes, group members should try running `git pull upstream master`
+  * Have the git master create a change in the main repo on the `main` branch. Add the change, commit it, and push it to Github
+  * Once the git master has pushed changes, group members should try running `git pull upstream main`
 
 If successful, group members should receive the change in their forks.
 
