@@ -35,9 +35,9 @@ After we define what a **Phone** is we can create classes that `inherit` from th
 
 Let's define two new classes that `inherit` from the **Phone** class. We'll make an **IPhone** and an **AndroidPhone**.
 
-* iPhones have a unique `unlock` method that accepts a fingerprint
-* iPhones have a unique `set_fingerprint` method that accepts a fingerprint
-* Android phones have a unique `set_keyboard` method that accepts a keyboard
+* iPhones have a unique `unlock` method that accepts a `fingerprint`-> str as a parameter.
+* iPhones have a unique `set_fingerprint` method that accepts a `fingerprint`-> str as a parameter.
+* Android phones have a unique `set_keyboard` method that accepts a `keyboard`-> str as a parameter.
 
 ```python
 class Phone:
