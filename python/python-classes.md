@@ -141,7 +141,15 @@ We can write a special method `__str__` that Python will call when an object is 
 
 Notice that Python goes out of it's way to improve the readability of code. Any method that looks like `__init__` or `__str__` with underscores has a special purpose in the language. Python uses the underscores to make it immediately clear that _this is where the magic happens!_
 
-Let's define a `__str__` method in our `Point` class that will print out points like we're used to seeing points. `p0` in the example above should appear as "\(0,0\)" and `p2` in the example above should appear as "\(3,4\)".
+Let's define a `__str__` method in our `Point` class that will print out points like we're used to seeing points. 
+- `p0` in the example above should appear as "\(0,0\)"
+```py
+print(p0) # (0,0)
+```
+- `p2` in the example above should appear as "\(3,4\)".
+```py
+print(p2) # (3,4)
+```
 
 ```python
 class Point():
