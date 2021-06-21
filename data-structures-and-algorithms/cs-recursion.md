@@ -196,12 +196,12 @@ What is our recursive case?
 Remember your return statements! The final solution should bubble up from the deeper recursive calls!
 
 ```js
-isPalindrome\(""\) // true 
-isPalindrome\("a"\) // true 
-isPalindrome\("ab"\) // false 
-isPalindrome\("abba"\) // true 
-isPalindrome\("catdog"\) // false 
-isPalindrome\("tacocat"\) // true
+isPalindrome("") // true 
+isPalindrome("a") // true 
+isPalindrome("ab") // false 
+isPalindrome("abba") // true 
+isPalindrome("catdog") // false 
+isPalindrome("tacocat") // true
 ```
 
 ```javascript
