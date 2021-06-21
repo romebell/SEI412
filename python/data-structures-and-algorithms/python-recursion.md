@@ -177,7 +177,14 @@ What is our recursive case?
 
 Remember your return statements! The final solution should bubble up from the deeper recursive calls!
 
-is\_palindrome\(""\) \# true is\_palindrome\("a"\) \# true is\_palindrome\("ab"\) \# false is\_palindrome\("abba"\) \# true is\_palindrome\("catdog"\) \# false is\_palindrome\("tacocat"\) \# true
+```py
+is_palindrome("") # true 
+is_palindrome("a") # true 
+is_palindrome("ab") # false 
+is_palindrome("abba") # true 
+is_palindrome("catdog") # false 
+is_palindrome("tacocat") # true
+```
 
 ```python
 def is_palindrome(ss):
