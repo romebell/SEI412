@@ -266,7 +266,7 @@ This **third** argument is the actual data we want to display! Now we can make a
 
 Make a directory in your `templates` directory called `cats`. Create an `index.html` file inside your `cats` folder and fill it with some basic html:
 
-```markup
+```html
 <!-- templates/cats/index.html -->
 <!DOCTYPE html>
 <html>
@@ -284,7 +284,7 @@ Make a directory in your `templates` directory called `cats`. Create an `index.h
 
 In this file we will use specific Django templating language to iterate and display our data in `cats`. Add this code under the `<hr />`:
 
-```markup
+```html
   {% for cat in cats %}
     <p>Name: {{ cat.name }}</p>
     <p>Age: {{ cat.age }}</p>
@@ -298,7 +298,7 @@ Here we see the brackets and percent symbols that delimit our Python template co
 
 Let's rafactor this and add some conditional expressions to change the way our page renders based on data. If a cat has an age of 0, let's set it to display 'Kitten'. Update the code you just added with the following:
 
-```markup
+```html
   {% for cat in cats %}
     <p>Name: {{ cat.name }}</p>
     {% if cat.age > 0 %}
@@ -348,7 +348,7 @@ First, we need to understand that Django expects us to put these files in a very
 
 4. In our index.html we need to load our static folder and files with our templating language. We do so by declaring our usage of static files at the top of the page. We'll also show you how to link your style.css file as well:
 
-```markup
+```html
   <!-- Add the following line... -->
   {% load staticfiles %}
   <!DOCTYPE html>
@@ -365,7 +365,7 @@ When we link in our stylesheet, we set the href like above. Using the `static` k
 
 1. We can also add in a CSS framework like Materialize in the normal way:
 
-   ```markup
+   ```html
     {% load staticfiles %}
     <!DOCTYPE html>
     <html>
