@@ -1,6 +1,6 @@
 # Models, Migrations
 
-## The New & Improved Cat Collector Code-Along, Part 2
+## Part 2
 
 Thanks for coming back! In this installment of Cat Collector we will be connecting Django to a database and starting to work with models and the Django ORM. Remember that the Django ORM provides functions for accessing the database without using straight SQL.
 
