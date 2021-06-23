@@ -145,7 +145,7 @@ Read more about the [cleaned\_data](https://docs.djangoproject.com/en/3.1/ref/fo
 
 Finally, we'll add a new file for the `login.html` template:
 
-```markup
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -185,7 +185,7 @@ def logout_view(request):
 
 Finally, let's add the log in and log out links to our site. Let's add it to our `base.html` since we want it to be accessible from every view. Add these lines under the link for "View All My Cats":
 
-```markup
+```html
     <header>
       {% if user.is_authenticated %}
       <span><a href="{% url 'profile' user.username %}">Hello, {{ user.username }}!</a></span>
@@ -235,7 +235,7 @@ def signup(request):
 
 In `templates` add a new file `signup.html`:
 
-```markup
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -312,7 +312,7 @@ def profile(request, username):
 
 Lastly, let's create a `profile.html` template to show a single User and all of the Cats they have collected:
 
-```markup
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -330,7 +330,7 @@ Lastly, let's create a `profile.html` template to show a single User and all of 
 
 Let's also update our `cats/index.html` page to allow us to inspect each user. Put this below the closing `<div>` in the card:
 
-```markup
+```html
 <!-- main_app/templates/index.html -->
 <a href="/user/{{cat.user.username}}">
     <p>Adopted By: {{cat.user.username }}</p>
