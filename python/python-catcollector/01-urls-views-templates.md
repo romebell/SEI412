@@ -156,7 +156,7 @@ Let's start with a simple template for our "about" page.
 1. Create a `templates` directory within the `main_app` directory.
 2. Create an `about.html` file inside your `templates` folder and fill it with some basic html:
 
-```markup
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -192,7 +192,7 @@ With that in place, we can move on to the `index.html` and follow roughly the sa
 
 1. Create an `index.html` file inside your `templates` folder and fill it with some basic HTML but be sure to include a link that points to `/cats`:
 
-```markup
+```html
 <!DOCTYPE html>
 <html>
   <head>
