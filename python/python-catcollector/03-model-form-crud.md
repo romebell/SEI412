@@ -57,7 +57,7 @@ Let's examine these. Each is a `class` that inherits from some kind of `View` cl
 
 That takes care of all the View code, but each of these views need a form template to be made. The `delete` operation needs a special form that asks if the user is sure they want to delete something. The `create` and `update` operations can share one form. Let's create some templates! Inside `templates` these forms are expected to be in a folder with the same name as our app so let's create a `main_app` folder. Inside there, make a `cat_form.html` file and give it these contents:
 
-```markup
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -75,7 +75,7 @@ There is a lot of Django template syntax in here so let's go over it. We are sti
 
 This form will be used for both `creating` and `updating`. The `delete` operation wants another file present. It will be used to confirm the deletion, basically asking the user if they are sure about what they are doing. In the same directory, create `cat_confirm_delete.html` and fill it thusly:
 
-```markup
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -122,7 +122,7 @@ Sure, we can type full URLs into our address bar but no user should be expected 
 
 When we create a new Cat, it really has nothing to do with any other Cat in the database so it doesn't make sense to have our `New Cat` link appearing in any of the data sections for the other Cats. Instead, having a single place to add a new Cat somewhere on the collection index page makes the most sense. Let's add a single link to "Add a new cat" to our cat collection index page above our Cat list:
 
-```markup
+```html
   <!-- templates/cats/index.html -->
   <a href="/cats/create">Add a New Cat!</a>
   <hr />
@@ -134,7 +134,7 @@ Now on the page where Django loops through all of our Cats and renders them all 
 
 The `Update` and `Delete` operations work on only one Cat at a time so these make more sense to have as part of each Cat's data section on the collection index. However, these are both `destructive` database operations, which means that they have the capability of changing or removing data in an irreversible way. As a result, we usually add a little bit more exclusivity to these operations because we don't want anyone doing them by accident. Instead of having them on the main Cats index page, let's put them into the `show/details` page for each Cat so you must view a Cat's details in order to have the links for updating and deleting that Cat to appear. We threw some materialize in there too to make things a bit fancier.
 
-```markup
+```html
 <!-- templates/cats/detail.html -->
 <div class="card-content">
     <span class="card-title">{{ cat.name }}</span>
