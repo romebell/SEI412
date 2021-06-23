@@ -2,7 +2,7 @@
 
 In today's lesson we will be seeing how Django provides powerful forms that we can use to enable any CRUD operation on our data quickly and easily. These are sort of Django's alternative to providing 100% proper RESTful routing support but it does end up saving us a lot of time even if the naming conventions aren't quite RESTful.
 
-## Learning Objectives \(Students will be able to...\)
+## Learning Objectives
 
 1. Add generic editing views for CREATE, UPDATE and DELETE operations.
 2. Use the `form_valid()` function for accessing request details.
