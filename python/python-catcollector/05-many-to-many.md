@@ -94,7 +94,7 @@ class CatToyDelete(DeleteView):
 
 Lastly, we need a few templates for this new model. We need the two forms for our generic editing views and we need an index and a details page. Our two forms will go into `main_app/templates/main_app`. One will be `cattoy_form.html` and the other will be `cattoy_confirm_delete.html`. Recall that this is the naming convention for these form templates when we are using `generic editing views`. Let's add those now:
 
-```markup
+```html
 <!-- main_app/templates/main_app/cattoy_form.html -->
 {% extends 'base.html' %}
 
@@ -109,7 +109,7 @@ Lastly, we need a few templates for this new model. We need the two forms for ou
 {% endblock %}
 ```
 
-```markup
+```html
 <!-- main_app/templates/main_app/cattoy_confirm_delete.html -->
 {% extends 'base.html' %}
 
@@ -128,7 +128,7 @@ Lastly, we need a few templates for this new model. We need the two forms for ou
 
 Now we'll add the two "read" pages, `cattoys\index.html` and `cattoys\show.html`. We need to make a directory inside our `templates` directory named `cattoys` and our pages will go in there:
 
-```markup
+```html
 <!-- templates/cattoys/show.html -->
 {% extends 'base.html' %}
 {% block content %}
@@ -226,7 +226,7 @@ Save everything, restart the server if necessary and visit the Cat Create page. 
 
 In the style of our detail pages so far, let's add something to show toys. Right above the `for` block for the photos in `cats/show.html`, add this code:
 
-```markup
+```html
 <!-- templates/cats/show.html -->
 <!-- above the update and delete links -->
 ...
@@ -242,7 +242,7 @@ In the style of our detail pages so far, let's add something to show toys. Right
 
 Because this is a many-to-many, it probably makes sense to show all the related Cats that own any particular toy. Let's update the `cattoys/show.html` page.
 
-```markup
+```html
 <!-- templates/cattoys/show.html -->
 ...
     <div>
