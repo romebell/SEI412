@@ -9,8 +9,7 @@ We will be working on a full-stack app in Django all week, adding to it piece by
 3. Django Model Forms and CRUD Operations
 4. One-to-Many \(1:m\) Data Relationships
 5. Many-to-Many \(m:m\) Data Relationships
-6. Cloud Image Storage with AWS
-7. Django Authentication
+6. Django Authentication
 
 In this first part, we will look at adding routes to our controller that allow us to serve different pages. We will also see the beginnings of the Django Templating Language that will allow us to dynamically create pages using a combination of HTML and Python and send them to the client.
 
