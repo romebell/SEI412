@@ -230,40 +230,30 @@ After we have made the DB call to retrieve our model, we will render a new view 
 
 1. We will now create a `show.html` template page in `templates/cats` to render our single model view:
 
-   \`\`\`markup
-
-&lt;!DOCTYPE html&gt;
-
-  catcollector  &lt;link rel="stylesheet" type="text/css" href="
-
-"&gt; &lt;/head&gt;  catcollector
-
-```text
+```html
 <h2> Name: {{ cat.name }}</h1>
 <p> Breed: {{ cat.breed }}</p>
 <p> Description: {{ cat.description }}</p>
 <p> Age: {{ cat.age }}</p>
 ```
 
-&lt;/body&gt; &lt;/html&gt;
 
-```text
 2. We can now view a single Cat on its dedicated show page! Awesome! To make our application actually useful, we need to create a link from our `index.html` listing of the Cats over to our `show.html` page. Wrap the entire iteration of each Cat in an anchor tag in our `index.html` page:
 
-   ```html
-   <!-- main_app/templates/cats/index.html -->
-   ...
-   {% for cat in cats %}
-     <a href="/cats/{{cat.id}}">
-       <p>Name: {{ cat.name }}</p>
-     {% if cat.age > 0 %}
-       <p>Age: {{ cat.age }}</p>
-     {% else %}
-       <p>Age: Kitten</p>
-     {% endif %}
-     </a>
-       <hr />
-   {% endfor %}
+```html
+<!-- main_app/templates/cats/index.html -->
+...
+{% for cat in cats %}
+ <a href="/cats/{{cat.id}}">
+   <p>Name: {{ cat.name }}</p>
+ {% if cat.age > 0 %}
+   <p>Age: {{ cat.age }}</p>
+ {% else %}
+   <p>Age: Kitten</p>
+ {% endif %}
+ </a>
+   <hr />
+{% endfor %}
 ```
 
 Now we can navigate to the show from the index! Make the `catcollector` header a link that goes back to our index to make our site fully navigable.
