@@ -250,7 +250,7 @@ After we have made the DB call to retrieve our model, we will render a new view 
 ```text
 2. We can now view a single Cat on its dedicated show page! Awesome! To make our application actually useful, we need to create a link from our `index.html` listing of the Cats over to our `show.html` page. Wrap the entire iteration of each Cat in an anchor tag in our `index.html` page:
 
-   ```markup
+   ```html
    <!-- main_app/templates/cats/index.html -->
    ...
    {% for cat in cats %}
@@ -274,7 +274,7 @@ We're beginning to see repeated code in our html templates so it makes sense to 
 
 1. Create a new `base.html` file within our templates folder. This will be our base 'layout' html file:
 
-   ```markup
+   ```html
    {% load static %}
    <!DOCTYPE html>
    <html>
@@ -303,7 +303,7 @@ We're beginning to see repeated code in our html templates so it makes sense to 
 
 2. In `cats/index.html` we will tell the templating language to send our html to `base.html` with a single line added to the top of the page. We will also wrap our pertinent Cat iterator in the `block content` and `endblock` template tags to designate what gets loaded into our `base.html` dynamically.
 
-```markup
+```html
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
