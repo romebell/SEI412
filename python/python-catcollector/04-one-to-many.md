@@ -115,7 +115,7 @@ def profile(request, username):
 
 Lastly, we create a `profile.html` template to show a single User and all of the Cats they have collected:
 
-```markup
+```html
 {% extends 'base.html' %}
 {% load static %}
 
@@ -135,7 +135,7 @@ Lastly, we create a `profile.html` template to show a single User and all of the
 
 Let's also update our `cats/index.html` page to allow us to inspect each user:
 
-```markup
+```html
 <!-- main_app/templates/index.html -->
 {% extends 'base.html' %}
 {% load static %}
