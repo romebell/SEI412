@@ -132,10 +132,10 @@ Now on the page where Django loops through all of our Cats and renders them all 
 
 ### Update & Delete
 
-The `Update` and `Delete` operations work on only one Cat at a time so these make more sense to have as part of each Cat's data section on the collection index. However, these are both `destructive` database operations, which means that they have the capability of changing or removing data in an irreversible way. As a result, we usually add a little bit more exclusivity to these operations because we don't want anyone doing them by accident. Instead of having them on the main Cats index page, let's put them into the `show/details` page for each Cat so you must view a Cat's details in order to have the links for updating and deleting that Cat to appear. We threw some materialize in there too to make things a bit fancier.
+The `Update` and `Delete` operations work on only one Cat at a time so these make more sense to have as part of each Cat's data section on the collection index. However, these are both `destructive` database operations, which means that they have the capability of changing or removing data in an irreversible way. As a result, we usually add a little bit more exclusivity to these operations because we don't want anyone doing them by accident. Instead of having them on the main Cats index page, let's put them into the `show` ( detail )page for each Cat so you must view a Cat's details in order to have the links for updating and deleting that Cat to appear. We threw some materialize in there too to make things a bit fancier.
 
 ```html
-<!-- templates/cats/detail.html -->
+<!-- templates/cats/show.html -->
 <div class="card-content">
     <span class="card-title">{{ cat.name }}</span>
     <p>Breed: {{ cat.breed }}</p>
